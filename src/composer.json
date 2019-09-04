@@ -20,8 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelEnso\\Services\\AppServiceProvider",
-                "LaravelEnso\\Services\\AuthServiceProvider"
+                "LaravelEnso\\Services\\AppServiceProvider"
             ]
         }
     }

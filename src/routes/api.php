@@ -4,7 +4,6 @@ Route::middleware(['web', 'auth', 'core'])
         Route::namespace('Administration\Services')
             ->prefix('api/administration/services')->as('administration.services.')
             ->group(function () {
-                Route::get('', 'Index')->name('index');
                 Route::get('create', 'Create')->name('create');
                 Route::post('', 'Store')->name('store');
                 Route::get('{service}/edit', 'Edit')->name('edit');
@@ -18,6 +17,5 @@ Route::middleware(['web', 'auth', 'core'])
                 Route::get('exportExcel', 'ExportExcel')->name('exportExcel');
 
                 Route::get('options', 'Options')->name('options');
-                Route::get('{service}', 'Show')->name('show');
             });
     });

@@ -2,14 +2,48 @@
     "name": "Service",
     "routePrefix": "administration.services",
     "crtNo": true,
-    "buttons": ["excel", "create", "show", "edit", "destroy"],
-    "columns": [{
-        "label": "Id",
-        "name": "id",
-        "data": "services.id",
-        "meta": [
-            "searchable",
-            "sortable"
-        ]
-    }]
+    "buttons": [
+        "excel",
+        "create",
+        "edit",
+        "destroy"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "name": "name",
+            "data": "products.name",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Description",
+            "name": "description",
+            "data": "products.description",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Monitored",
+            "name": "is_monitored",
+            "data": "products.is_monitored",
+            "meta": [
+                "boolean",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Active",
+            "name": "is_active",
+            "data": "products.is_active",
+            "meta": [
+                "boolean",
+                "sortable"
+            ]
+        }
+    ]
 }

@@ -8,7 +8,6 @@ class CreateStructureForServices extends Migration
         ['name' => 'administration.services.index', 'description' => 'Show index for service', 'type' => 0, 'is_default' => false],
         ['name' => 'administration.services.create', 'description' => 'Create service', 'type' => 1, 'is_default' => false],
         ['name' => 'administration.services.store', 'description' => 'Store a new service', 'type' => 1, 'is_default' => false],
-        ['name' => 'administration.services.show', 'description' => 'Show service', 'type' => 1, 'is_default' => false],
         ['name' => 'administration.services.edit', 'description' => 'Edit service', 'type' => 1, 'is_default' => false],
         ['name' => 'administration.services.update', 'description' => 'Update service', 'type' => 1, 'is_default' => false],
         ['name' => 'administration.services.destroy', 'description' => 'Delete service', 'type' => 1, 'is_default' => false],
