@@ -1,0 +1,28 @@
+{
+    "name": "laravel-enso/services",
+    "type": "library",
+    "description": "",
+    "authors": [],
+    "keywords": [],
+    "homepage": "https://www.laravel-enso.com",
+    "require": {
+        "php": ">=7.1.3",
+        "laravel-enso/core": "4.3.*",
+        "laravel-enso/forms": "3.1.*",
+        "laravel-enso/helpers": "1.11.*",
+        "laravel-enso/tables": "2.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelEnso\\Services\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelEnso\\Services\\AppServiceProvider",
+                "LaravelEnso\\Services\\AuthServiceProvider"
+            ]
+        }
+    }
+}
