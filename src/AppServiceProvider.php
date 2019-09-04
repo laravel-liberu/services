@@ -6,7 +6,6 @@ use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
-
     public function boot()
     {
         $this->load();
@@ -21,11 +20,10 @@ class AppServiceProvider extends ServiceProvider
 
     private function publish()
     {
-        //
-    }
+        $this->publishes([
+            __DIR__.'/database/factories' => database_path('factories'),
+        ], 'services-factories');
 
-    public function register()
-    {
-        //
+        return $this;
     }
 }
