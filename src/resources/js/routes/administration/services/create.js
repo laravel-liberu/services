@@ -1,4 +1,4 @@
-const ServiceCreate = () => import('@pages/administration/services/Create.vue');
+const ServiceCreate = () => import('../../../pages/administration/services/Create.vue');
 
 export default {
     name: 'administration.services.create',

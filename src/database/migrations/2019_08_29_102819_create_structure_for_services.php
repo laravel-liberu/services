@@ -18,7 +18,7 @@ class CreateStructureForServices extends Migration
     ];
 
     protected $menu = [
-        'name' => 'Services', 'icon' => 'trash', 'route' => 'administration.services.index', 'order_index' => 10, 'has_children' => false
+        'name' => 'Services', 'icon' => 'hand-holding-usd', 'route' => 'administration.services.index', 'order_index' => 10, 'has_children' => false
     ];
 
     protected $parentMenu = 'Administration';

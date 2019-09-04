@@ -1,4 +1,4 @@
-const ServiceEdit = () => import('@pages/administration/services/Edit.vue');
+const ServiceEdit = () => import('../../../pages/administration/services/Edit.vue');
 
 export default {
     name: 'administration.services.edit',

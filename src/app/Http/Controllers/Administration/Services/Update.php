@@ -2,8 +2,8 @@
 
 namespace LaravelEnso\Services\app\Http\Controllers\Administration\Services;
 
-use LaravelEnso\Services\app\Service;
 use Illuminate\Routing\Controller;
+use LaravelEnso\Services\app\Service;
 use LaravelEnso\Services\app\Http\Requests\Administration\ValidateServiceStore;
 
 class Update extends Controller

@@ -1,4 +1,4 @@
-const ServiceIndex = () => import('@pages/administration/services/Index.vue');
+const ServiceIndex = () => import('../../../pages/administration/services/Index.vue');
 
 export default {
     name: 'administration.services.index',

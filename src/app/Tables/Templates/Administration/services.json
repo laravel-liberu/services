@@ -12,7 +12,7 @@
         {
             "label": "Name",
             "name": "name",
-            "data": "products.name",
+            "data": "services.name",
             "meta": [
                 "searchable",
                 "sortable"
@@ -21,7 +21,7 @@
         {
             "label": "Description",
             "name": "description",
-            "data": "products.description",
+            "data": "services.description",
             "meta": [
                 "searchable",
                 "sortable"
@@ -30,7 +30,7 @@
         {
             "label": "Monitored",
             "name": "is_monitored",
-            "data": "products.is_monitored",
+            "data": "services.is_monitored",
             "meta": [
                 "boolean",
                 "sortable"
@@ -39,7 +39,7 @@
         {
             "label": "Active",
             "name": "is_active",
-            "data": "products.is_active",
+            "data": "services.is_active",
             "meta": [
                 "boolean",
                 "sortable"

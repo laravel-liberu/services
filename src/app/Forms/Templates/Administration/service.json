@@ -23,19 +23,19 @@
                     "name": "description",
                     "value": null,
                     "meta": {
-                        "type": "input",
+                        "type": "textarea",
                         "content": "text"
                     }
                 }
             ]
         },
         {
-            "columns": 1,
+            "columns": 2,
             "fields": [
                 {
                     "label": "Monitored",
                     "name": "is_monitored",
-                    "value": true,
+                    "value": false,
                     "meta": {
                         "type": "input",
                         "content": "checkbox"
