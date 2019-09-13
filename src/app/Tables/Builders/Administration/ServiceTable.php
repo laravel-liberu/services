@@ -12,7 +12,6 @@ class ServiceTable extends Table
     public function query()
     {
         return Service::selectRaw('
-            services.id as "dtRowId",
             services.id,
             services.name,
             services.description,
