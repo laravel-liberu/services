@@ -1,5 +1,12 @@
 # Services
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6e342eff10f24db5b89be5fe203e424d)](https://www.codacy.com/app/laravel-enso/services?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=laravel-enso/services&amp;utm_campaign=Badge_Grade)
+[![StyleCI](https://github.styleci.io/repos/85492361/shield?branch=master)](https://github.styleci.io/repos/85492361)
+[![License](https://poser.pugx.org/laravel-enso/services/license)](https://packagist.org/packages/laravel-enso/datatable)
+[![Total Downloads](https://poser.pugx.org/laravel-enso/services/downloads)](https://packagist.org/packages/laravel-enso/services)
+[![Latest Stable Version](https://poser.pugx.org/laravel-enso/services/version)](https://packagist.org/packages/laravel-enso/services)
+
+
 Services package is an extesion of the Laravel Enso enviroment, designed for services management.
 
 **Note:** *This package cannot be used outside of enso enviroment and is not included in [Laravel Enso Core](https://github.com/laravel-enso/Core) packages.*
