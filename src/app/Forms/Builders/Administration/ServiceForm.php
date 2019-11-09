@@ -2,8 +2,8 @@
 
 namespace LaravelEnso\Services\app\Forms\Builders\Administration;
 
-use LaravelEnso\Services\app\Service;
 use LaravelEnso\Forms\app\Services\Form;
+use LaravelEnso\Services\app\Service;
 
 class ServiceForm
 {

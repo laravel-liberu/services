@@ -3,8 +3,8 @@
 namespace LaravelEnso\Services\app\Http\Controllers\Administration\Services;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\Services\app\Service;
 use LaravelEnso\Services\app\Http\Requests\Administration\ValidateServiceStore;
+use LaravelEnso\Services\app\Service;
 
 class Update extends Controller
 {

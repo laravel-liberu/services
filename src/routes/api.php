@@ -1,4 +1,5 @@
 <?php
+
 Route::middleware(['web', 'auth', 'core'])
     ->group(function () {
         Route::namespace('LaravelEnso\Services\app\Http\Controllers\Administration\Services')

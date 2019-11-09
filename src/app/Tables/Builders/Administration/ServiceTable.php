@@ -2,8 +2,8 @@
 
 namespace LaravelEnso\Services\app\Tables\Builders\Administration;
 
-use LaravelEnso\Services\app\Service;
 use Illuminate\Database\Eloquent\Builder;
+use LaravelEnso\Services\app\Service;
 use LaravelEnso\Tables\app\Contracts\Table;
 
 class ServiceTable implements Table

@@ -2,8 +2,8 @@
 
 namespace LaravelEnso\Services\app\Http\Requests\Administration;
 
-use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class ValidateServiceStore extends FormRequest
 {
