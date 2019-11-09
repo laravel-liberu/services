@@ -14,9 +14,8 @@ class CreateServicesTable extends Migration
             $table->string('name')->unique();
             $table->string('description')->nullable();
 
-            $table->boolean('is_monitored');
             $table->boolean('is_active');
-            
+
             $table->timestamps();
         });
     }

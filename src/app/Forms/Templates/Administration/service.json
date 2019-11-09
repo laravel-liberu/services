@@ -1,56 +1,31 @@
 {
     "routePrefix": "administration.services",
-    "sections": [
-        {
-            "columns": 1,
-            "fields": [
-                {
-                    "label": "Name",
-                    "name": "name",
-                    "value": null,
-                    "meta": {
-                        "type": "input",
-                        "content": "text"
-                    }
-                }
-            ]
-        },
-        {
-            "columns": 1,
-            "fields": [
-                {
-                    "label": "Description",
-                    "name": "description",
-                    "value": null,
-                    "meta": {
-                        "type": "textarea",
-                        "content": "text"
-                    }
-                }
-            ]
-        },
-        {
-            "columns": 2,
-            "fields": [
-                {
-                    "label": "Monitored",
-                    "name": "is_monitored",
-                    "value": false,
-                    "meta": {
-                        "type": "input",
-                        "content": "checkbox"
-                    }
-                },
-                {
-                    "label": "Active",
-                    "name": "is_active",
-                    "value": true,
-                    "meta": {
-                        "type": "input",
-                        "content": "checkbox"
-                    }
-                }
-            ]
-        }
-    ]
+    "sections": [{
+        "columns": 1,
+        "fields": [{
+            "label": "Name",
+            "name": "name",
+            "value": null,
+            "meta": {
+                "type": "input",
+                "content": "text"
+            }
+        }, {
+            "label": "Description",
+            "name": "description",
+            "value": null,
+            "meta": {
+                "type": "textarea",
+                "content": "text"
+            }
+        }, {
+            "label": "Active",
+            "name": "is_active",
+            "value": true,
+            "meta": {
+                "type": "input",
+                "content": "checkbox"
+            }
+        }]
+    }]
 }

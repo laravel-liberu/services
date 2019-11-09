@@ -7,7 +7,6 @@ $factory->define(Service::class, function (Faker $faker) {
     return [
         'name' => $faker->unique()->name,
         'description' => $faker->text,
-        'is_monitored' => $faker->boolean,
         'is_active' => true,
     ];
 });

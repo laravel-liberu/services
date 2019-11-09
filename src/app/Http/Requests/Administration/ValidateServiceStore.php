@@ -17,7 +17,6 @@ class ValidateServiceStore extends FormRequest
         return [
             'name' => ['required', 'string', $this->unique()],
             'description' => 'nullable|string',
-            'is_monitored' => 'boolean',
             'is_active' => 'boolean',
         ];
     }
