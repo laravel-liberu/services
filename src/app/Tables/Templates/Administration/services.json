@@ -2,21 +2,76 @@
     "name": "Service",
     "routePrefix": "administration.services",
     "crtNo": true,
-    "buttons": ["excel", "create", "edit", "destroy"],
-    "columns": [{
-        "label": "Name",
-        "name": "name",
-        "data": "services.name",
-        "meta": ["searchable", "sortable"]
-    }, {
-        "label": "Description",
-        "name": "description",
-        "data": "services.description",
-        "meta": ["searchable", "sortable"]
-    }, {
-        "label": "Active",
-        "name": "is_active",
-        "data": "services.is_active",
-        "meta": ["boolean", "sortable"]
-    }]
+    "buttons": [
+        "excel",
+        "create",
+        "edit",
+        "destroy"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "name": "name",
+            "data": "services.name",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Code",
+            "name": "code",
+            "data": "services.code",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "List Price",
+            "name": "list_price",
+            "data": "services.list_price",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Vat",
+            "name": "vat",
+            "data": "services.vat_percent",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Measurement Unit",
+            "name": "measurementUnit",
+            "data": "measurement_units.name",
+            "meta": [
+                "searchable",
+                "sortable",
+                "translated"
+            ]
+        },
+        {
+            "label": "Description",
+            "name": "description",
+            "data": "services.description",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Active",
+            "name": "is_active",
+            "data": "services.is_active",
+            "meta": [
+                "boolean",
+                "sortable"
+            ]
+        }
+    ]
 }
