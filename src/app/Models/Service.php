@@ -13,7 +13,7 @@ class Service extends Model
     use AvoidsDeletionConflicts, InCents, ActiveState;
 
     protected $fillable = ['measurement_unit_id', 'name', 'code', 'list_price',
-        'vat_percent', 'description', 'is_active'];
+        'vat_percent', 'description', 'is_active', ];
 
     protected $casts = ['is_active' => 'boolean'];
 

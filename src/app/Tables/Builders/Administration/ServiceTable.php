@@ -21,7 +21,7 @@ class ServiceTable implements Table
             services.is_active
             services.description, 
             measurement_units.name
-        ')->join('measurement_units', 'measurement_units.id','=', 'services.measurement_unit_id');
+        ')->join('measurement_units', 'measurement_units.id', '=', 'services.measurement_unit_id');
     }
 
     public function templatePath(): string
