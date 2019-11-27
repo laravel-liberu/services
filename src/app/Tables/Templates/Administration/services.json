@@ -33,12 +33,13 @@
             "data": "services.list_price",
             "meta": [
                 "searchable",
-                "sortable"
+                "sortable",
+                "cents"
             ]
         },
         {
             "label": "Vat",
-            "name": "vat",
+            "name": "vat_percent",
             "data": "services.vat_percent",
             "meta": [
                 "searchable",
@@ -52,7 +53,7 @@
             "meta": [
                 "searchable",
                 "sortable",
-                "translated"
+                "translatable"
             ]
         },
         {

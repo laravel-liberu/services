@@ -4,13 +4,14 @@ namespace LaravelEnso\Services\app\Http\Controllers\Administration\Services;
 
 use Illuminate\Routing\Controller;
 use LaravelEnso\Services\app\Http\Requests\Administration\ValidateServiceStore;
-use LaravelEnso\Services\app\Service;
+use LaravelEnso\Services\app\Models\Service;
 
 class Store extends Controller
 {
     public function __invoke(ValidateServiceStore $request, Service $service)
     {
-        tap($service)->fill($request->validated())
+        $service->inCents(false)
+            ->fill($request->validated())
             ->save();
 
         return [

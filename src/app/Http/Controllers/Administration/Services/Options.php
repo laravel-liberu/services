@@ -4,7 +4,7 @@ namespace LaravelEnso\Services\app\Http\Controllers\Administration\Services;
 
 use Illuminate\Routing\Controller;
 use LaravelEnso\Select\app\Traits\OptionsBuilder;
-use LaravelEnso\Services\app\Service;
+use LaravelEnso\Services\app\Models\Service;
 
 class Options extends Controller
 {

@@ -4,7 +4,7 @@ namespace LaravelEnso\Services\app\Http\Controllers\Administration\Services;
 
 use Illuminate\Routing\Controller;
 use LaravelEnso\Services\app\Forms\Builders\Administration\ServiceForm;
-use LaravelEnso\Services\app\Service;
+use LaravelEnso\Services\app\Models\Service;
 
 class Edit extends Controller
 {

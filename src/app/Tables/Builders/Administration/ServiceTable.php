@@ -3,7 +3,7 @@
 namespace LaravelEnso\Services\app\Tables\Builders\Administration;
 
 use Illuminate\Database\Eloquent\Builder;
-use LaravelEnso\Services\app\Service;
+use LaravelEnso\Services\app\Models\Service;
 use LaravelEnso\Tables\app\Contracts\Table;
 
 class ServiceTable implements Table
@@ -18,9 +18,9 @@ class ServiceTable implements Table
             services.code, 
             services.list_price, 
             services.vat_percent, 
-            services.is_active
+            services.is_active,
             services.description, 
-            measurement_units.name
+            measurement_units.name as measurementUnit
         ')->join('measurement_units', 'measurement_units.id', '=', 'services.measurement_unit_id');
     }
 

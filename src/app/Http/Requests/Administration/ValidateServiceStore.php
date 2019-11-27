@@ -19,7 +19,7 @@ class ValidateServiceStore extends FormRequest
             'name' => ['required', 'string', $this->uniqueName()],
             'code' => ['required', 'string', $this->uniqueCode()],
             'list_price' => 'required|numeric|min:0.01',
-            'vat_percent' => 'required|integer',
+            'vat_percent' => 'required|integer|min:0',
             'description' => 'nullable|string',
             'is_active' => 'boolean',
         ];
