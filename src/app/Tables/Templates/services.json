@@ -38,7 +38,7 @@
             ]
         },
         {
-            "label": "Vat",
+            "label": "VAT",
             "name": "vat_percent",
             "data": "services.vat_percent",
             "meta": [
