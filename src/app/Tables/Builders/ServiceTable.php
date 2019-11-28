@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\Services\app\Tables\Builders\Administration;
+namespace LaravelEnso\Services\app\Tables\Builders;
 
 use Illuminate\Database\Eloquent\Builder;
 use LaravelEnso\Services\app\Models\Service;
@@ -8,7 +8,7 @@ use LaravelEnso\Tables\app\Contracts\Table;
 
 class ServiceTable implements Table
 {
-    protected const TemplatePath = __DIR__.'/../../Templates/Administration/services.json';
+    protected const TemplatePath = __DIR__.'/../Templates/services.json';
 
     public function query(): Builder
     {
