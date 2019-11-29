@@ -13,7 +13,7 @@ class Destroy extends Controller
 
         return [
             'message' => __('The service was successfully deleted'),
-            'redirect' => 'administration.services.index',
+            'redirect' => 'services.index',
         ];
     }
 }

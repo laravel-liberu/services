@@ -1,6 +1,6 @@
 {
     "name": "Service",
-    "routePrefix": "administration.services",
+    "routePrefix": "services",
     "crtNo": true,
     "buttons": [
         "excel",

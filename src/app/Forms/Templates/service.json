@@ -1,5 +1,5 @@
 {
-    "routePrefix": "administration.services",
+    "routePrefix": "services",
     "sections": [
         {
             "columns": 2,

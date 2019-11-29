@@ -13,14 +13,8 @@ class ServiceTable implements Table
     public function query(): Builder
     {
         return Service::selectRaw('
-            services.id, 
-            services.name, 
-            services.code, 
-            services.list_price, 
-            services.vat_percent, 
-            services.is_active,
-            services.description, 
-            measurement_units.name as measurementUnit
+            services.id, services.name, services.code, services.list_price,             services.vat_percent,             services.is_active,
+            services.description,  measurement_units.name as measurementUnit
         ')->join('measurement_units', 'measurement_units.id', '=', 'services.measurement_unit_id');
     }
 

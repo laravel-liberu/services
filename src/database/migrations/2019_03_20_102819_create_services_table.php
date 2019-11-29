@@ -15,7 +15,7 @@ class CreateServicesTable extends Migration
             $table->foreign('measurement_unit_id')->references('id')
                 ->on('measurement_units');
 
-            $table->string('name')->unique();
+            $table->string('name');
             $table->string('code')->unique();
 
             $table->unsignedInteger('list_price');
