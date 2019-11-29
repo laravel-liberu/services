@@ -2,7 +2,7 @@
 
 use Tests\TestCase;
 use LaravelEnso\Core\app\Models\User;
-use LaravelEnso\Services\app\Service;
+use LaravelEnso\Services\app\Models\Service;
 use LaravelEnso\Forms\app\TestTraits\EditForm;
 use LaravelEnso\Forms\app\TestTraits\CreateForm;
 use LaravelEnso\Forms\app\TestTraits\DestroyForm;
@@ -13,7 +13,7 @@ class ServiceTest extends TestCase
 {
     use Datatable, DestroyForm, EditForm, CreateForm, RefreshDatabase;
 
-    private $permissionGroup = 'administration.services';
+    private $permissionGroup = 'services';
     private $testModel;
 
     protected function setUp(): void
@@ -32,7 +32,7 @@ class ServiceTest extends TestCase
     public function can_store_service()
     {
         $response = $this->post(
-            route('administration.services.store', [], false),
+            route('services.store', [], false),
             $this->testModel->toArray()
         );
 
@@ -42,7 +42,7 @@ class ServiceTest extends TestCase
         $response->assertStatus(200)
             ->assertJsonStructure(['message'])
             ->assertJsonFragment([
-                'redirect' => 'administration.services.edit',
+                'redirect' => 'services.edit',
                 'param' => ['service' => $service->id],
             ]);
     }
@@ -53,7 +53,7 @@ class ServiceTest extends TestCase
         tap($this->testModel)->save()->name = 'updated';
 
         $this->patch(
-            route('administration.services.update', $this->testModel->id, false),
+            route('services.update', $this->testModel->id, false),
             $this->testModel->toArray()
         )->assertStatus(200)
         ->assertJsonStructure(['message']);
@@ -69,7 +69,7 @@ class ServiceTest extends TestCase
     {
         $this->testModel->save();
 
-        $this->get(route('administration.services.options', [
+        $this->get(route('services.options', [
             'query' => $this->testModel->name,
             'limit' => 10,
         ], false))

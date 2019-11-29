@@ -1,13 +1,13 @@
 <?php
 
-namespace LaravelEnso\Services\app\Forms\Builders\Administration;
+namespace LaravelEnso\Services\app\Forms\Builders;
 
 use LaravelEnso\Forms\app\Services\Form;
-use LaravelEnso\Services\app\Service;
+use LaravelEnso\Services\app\Models\Service;
 
 class ServiceForm
 {
-    private const TemplatePath = __DIR__.'/../../Templates/Administration/service.json';
+    private const TemplatePath = __DIR__.'/../Templates/service.json';
 
     private $form;
 
@@ -23,6 +23,6 @@ class ServiceForm
 
     public function edit(Service $service)
     {
-        return $this->form->edit($service);
+        return $this->form->edit($service->inCents(false));
     }
 }

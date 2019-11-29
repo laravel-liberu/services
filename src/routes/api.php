@@ -2,8 +2,8 @@
 
 Route::middleware(['web', 'auth', 'core'])
     ->group(function () {
-        Route::namespace('LaravelEnso\Services\app\Http\Controllers\Administration\Services')
-            ->prefix('api/administration/services')->as('administration.services.')
+        Route::namespace('LaravelEnso\Services\app\Http\Controllers')
+            ->prefix('api/services')->as('services.')
             ->group(function () {
                 Route::get('create', 'Create')->name('create');
                 Route::post('', 'Store')->name('store');

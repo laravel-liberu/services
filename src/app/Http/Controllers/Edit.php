@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\Services\app\Http\Controllers\Administration\Services;
+namespace LaravelEnso\Services\app\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\Services\app\Forms\Builders\Administration\ServiceForm;
-use LaravelEnso\Services\app\Service;
+use LaravelEnso\Services\app\Forms\Builders\ServiceForm;
+use LaravelEnso\Services\app\Models\Service;
 
 class Edit extends Controller
 {

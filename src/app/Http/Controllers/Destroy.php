@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\Services\app\Http\Controllers\Administration\Services;
+namespace LaravelEnso\Services\app\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\Services\app\Service;
+use LaravelEnso\Services\app\Models\Service;
 
 class Destroy extends Controller
 {
@@ -13,7 +13,7 @@ class Destroy extends Controller
 
         return [
             'message' => __('The service was successfully deleted'),
-            'redirect' => 'administration.services.index',
+            'redirect' => 'services.index',
         ];
     }
 }

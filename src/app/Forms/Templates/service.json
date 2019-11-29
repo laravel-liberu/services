@@ -1,0 +1,78 @@
+{
+    "routePrefix": "services",
+    "sections": [
+        {
+            "columns": 2,
+            "fields": [
+                {
+                    "label": "Name",
+                    "name": "name",
+                    "value": null,
+                    "meta": {
+                        "type": "input",
+                        "content": "text"
+                    }
+                },
+                {
+                    "label": "Code",
+                    "name": "code",
+                    "value": null,
+                    "meta": {
+                        "type": "input",
+                        "content": "text"
+                    }
+                },
+                {
+                    "label": "List Price",
+                    "name": "list_price",
+                    "value": null,
+                    "meta": {
+                        "type": "input",
+                        "content": "number",
+                        "min": 0,
+                        "step": 0.01
+                    }
+                },
+                {
+                    "label": "VAT Percent",
+                    "name": "vat_percent",
+                    "value": null,
+                    "meta": {
+                        "type": "input",
+                        "content": "number",
+                        "min": 0,
+                        "step": 1
+                    }
+                },
+                {
+                    "label": "Measurement",
+                    "name": "measurement_unit_id",
+                    "value": null,
+                    "meta": {
+                        "type": "select",
+                        "source": "administration.measurementUnits.options",
+                        "translated": true
+                    }
+                },
+                {
+                    "label": "Active",
+                    "name": "is_active",
+                    "value": true,
+                    "meta": {
+                        "type": "input",
+                        "content": "checkbox"
+                    }
+                },
+                {
+                    "label": "Description",
+                    "name": "description",
+                    "value": null,
+                    "meta": {
+                        "type": "textarea",
+                        "content": "text"
+                    }
+                }
+            ]
+        }
+    ]
+}

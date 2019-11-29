@@ -1,0 +1,10 @@
+/.vscode
+/vendor
+/.idea
+/.vagrant
+npm-debug.log
+.DS_STORE
+.DS_Store
+.php_cs.cache
+.phpunit.result.cache
+._*
