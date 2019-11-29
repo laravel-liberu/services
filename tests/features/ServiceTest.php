@@ -2,7 +2,7 @@
 
 use Tests\TestCase;
 use LaravelEnso\Core\app\Models\User;
-use LaravelEnso\Services\app\Service;
+use LaravelEnso\Services\app\Models\Service;
 use LaravelEnso\Forms\app\TestTraits\EditForm;
 use LaravelEnso\Forms\app\TestTraits\CreateForm;
 use LaravelEnso\Forms\app\TestTraits\DestroyForm;
