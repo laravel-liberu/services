@@ -14,7 +14,8 @@ class Service extends Model
 {
     use AvoidsDeletionConflicts, InCents, ActiveState, TableCache, Relations;
 
-    protected $fillable = ['measurement_unit_id', 'name', 'code', 'list_price',
+    protected $fillable = [
+        'measurement_unit_id', 'name', 'code', 'list_price',
         'vat_percent', 'description', 'is_active',
     ];
 
