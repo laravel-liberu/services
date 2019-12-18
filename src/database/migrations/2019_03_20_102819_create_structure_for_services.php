@@ -18,6 +18,6 @@ class CreateStructureForServices extends Migration
     ];
 
     protected $menu = [
-        'name' => 'Services', 'icon' => 'handshake', 'route' => 'services.index', 'order_index' => 30, 'has_children' => false,
+        'name' => 'Services', 'icon' => 'handshake', 'route' => 'services.index', 'order_index' => 230, 'has_children' => false,
     ];
 }
