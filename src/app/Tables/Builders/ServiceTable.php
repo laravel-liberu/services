@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\Services\app\Tables\Builders;
+namespace LaravelEnso\Services\App\Tables\Builders;
 
 use Illuminate\Database\Eloquent\Builder;
-use LaravelEnso\Services\app\Models\Service;
-use LaravelEnso\Tables\app\Contracts\Table;
+use LaravelEnso\Services\App\Models\Service;
+use LaravelEnso\Tables\App\Contracts\Table;
 
 class ServiceTable implements Table
 {
@@ -13,7 +13,7 @@ class ServiceTable implements Table
     public function query(): Builder
     {
         return Service::selectRaw('
-            services.id, services.name, services.code, services.list_price, services.vat_percent, 
+            services.id, services.name, services.code, services.list_price, services.vat_percent,
             services.is_active, services.description,  measurement_units.name as measurementUnit
         ')->join('measurement_units', 'measurement_units.id', '=', 'services.measurement_unit_id');
     }

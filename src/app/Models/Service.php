@@ -1,14 +1,14 @@
 <?php
 
-namespace LaravelEnso\Services\app\Models;
+namespace LaravelEnso\Services\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use LaravelEnso\DynamicMethods\app\Traits\Relations;
-use LaravelEnso\Helpers\app\Traits\ActiveState;
-use LaravelEnso\Helpers\app\Traits\AvoidsDeletionConflicts;
-use LaravelEnso\Helpers\app\Traits\InCents;
-use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
-use LaravelEnso\Tables\app\Traits\TableCache;
+use LaravelEnso\DynamicMethods\App\Traits\Relations;
+use LaravelEnso\Helpers\App\Traits\ActiveState;
+use LaravelEnso\Helpers\App\Traits\AvoidsDeletionConflicts;
+use LaravelEnso\Helpers\App\Traits\InCents;
+use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
+use LaravelEnso\Tables\App\Traits\TableCache;
 
 class Service extends Model
 {
