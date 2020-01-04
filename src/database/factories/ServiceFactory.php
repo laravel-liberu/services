@@ -15,4 +15,4 @@ $factory->define(Service::class, fn (Faker $faker) => [
     'is_active' => true,
 ]);
 
-$factory->afterMaking(Service::class, fn ($invoice, $faker) => $invoice->inCents = true);
+$factory->afterMaking(Service::class, fn ($service, $faker) => $service->inCents = true);
