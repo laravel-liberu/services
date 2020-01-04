@@ -1,23 +1,18 @@
 <?php
 
 use Faker\Generator as Faker;
-use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
-use LaravelEnso\Services\app\Models\Service;
+use Illuminate\Support\Collection;
+use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
+use LaravelEnso\Services\App\Models\Service;
 
-$factory->define(Service::class, function (Faker $faker) {
-    return [
-        'measurement_unit_id' => function () {
-            return (factory(MeasurementUnit::class)->create())->id;
-        },
-        'name' => $faker->name,
-        'code' => $faker->unique()->ean8,
-        'list_price' => $faker->numberBetween(1, 300),
-        'vat_percent' => collect([5, 19, 24])->random(),
-        'description' => $faker->text,
-        'is_active' => true,
-    ];
-});
+$factory->define(Service::class, fn (Faker $faker) => [
+    'measurement_unit_id' => fn () => factory(MeasurementUnit::class)->create()->id,
+    'name' => $faker->name,
+    'code' => $faker->unique()->ean8,
+    'list_price' => $faker->numberBetween(1, 300),
+    'vat_percent' => (new Collection([5, 19, 24]))->random(),
+    'description' => $faker->text,
+    'is_active' => true,
+]);
 
-$factory->afterMaking(Service::class, function ($invoice, $faker) {
-    $invoice->inCents = true;
-});
+$factory->afterMaking(Service::class, fn ($invoice, $faker) => $invoice->inCents = true);

@@ -1,14 +1,14 @@
 <?php
 
-namespace LaravelEnso\Services\app\Http\Controllers;
+namespace LaravelEnso\Services\App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\Services\app\Tables\Builders\ServiceTable;
-use LaravelEnso\Tables\app\Traits\Data;
+use LaravelEnso\Services\App\Tables\Builders\ServiceTable;
+use LaravelEnso\Tables\App\Traits\Data;
 
 class TableData extends Controller
 {
     use Data;
 
-    protected $tableClass = ServiceTable::class;
+    protected string $tableClass = ServiceTable::class;
 }

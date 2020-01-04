@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\Services\app\Http\Controllers;
+namespace LaravelEnso\Services\App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\Services\app\Forms\Builders\ServiceForm;
+use LaravelEnso\Services\App\Forms\Builders\ServiceForm;
 
 class Create extends Controller
 {

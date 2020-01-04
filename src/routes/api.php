@@ -1,8 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 Route::middleware(['web', 'auth', 'core'])
     ->group(function () {
-        Route::namespace('LaravelEnso\Services\app\Http\Controllers')
+        Route::namespace('LaravelEnso\Services\App\Http\Controllers')
             ->prefix('api/services')->as('services.')
             ->group(function () {
                 Route::get('create', 'Create')->name('create');

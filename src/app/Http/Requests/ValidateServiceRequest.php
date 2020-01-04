@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\Services\app\Http\Requests;
+namespace LaravelEnso\Services\App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
