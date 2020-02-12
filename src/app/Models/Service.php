@@ -8,11 +8,12 @@ use LaravelEnso\Helpers\App\Traits\ActiveState;
 use LaravelEnso\Helpers\App\Traits\AvoidsDeletionConflicts;
 use LaravelEnso\Helpers\App\Traits\InCents;
 use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
+use LaravelEnso\Rememberable\App\Traits\Rememberable;
 use LaravelEnso\Tables\App\Traits\TableCache;
 
 class Service extends Model
 {
-    use AvoidsDeletionConflicts, InCents, ActiveState, TableCache, Relations;
+    use AvoidsDeletionConflicts, InCents, ActiveState, TableCache, Relations, Rememberable;
 
     protected $fillable = [
         'measurement_unit_id', 'name', 'code', 'list_price',
