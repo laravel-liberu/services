@@ -18,7 +18,7 @@ class CreateServicesTable extends Migration
             $table->string('name');
             $table->string('code')->unique();
 
-            $table->unsignedInteger('list_price');
+            $table->unsignedDecimal('list_price', 11, 2);
             $table->unsignedTinyInteger('vat_percent');
 
             $table->string('description')->nullable();
