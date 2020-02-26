@@ -23,6 +23,6 @@ class ServiceForm
 
     public function edit(Service $service)
     {
-        return $this->form->edit($service->inCents(false));
+        return $this->form->edit($service);
     }
 }

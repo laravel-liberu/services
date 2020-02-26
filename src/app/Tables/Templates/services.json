@@ -33,8 +33,7 @@
             "data": "services.list_price",
             "meta": [
                 "searchable",
-                "sortable",
-                "cents"
+                "sortable"
             ]
         },
         {
