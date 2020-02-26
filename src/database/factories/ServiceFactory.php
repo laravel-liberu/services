@@ -14,5 +14,3 @@ $factory->define(Service::class, fn (Faker $faker) => [
     'description' => $faker->text,
     'is_active' => true,
 ]);
-
-$factory->afterMaking(Service::class, fn ($service, $faker) => $service->inCents = true);
