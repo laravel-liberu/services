@@ -10,8 +10,7 @@ class Update extends Controller
 {
     public function __invoke(ValidateServiceRequest $request, Service $service)
     {
-        $service->inCents(false)
-            ->update($request->validated());
+        $service->update($request->validated());
 
         return ['message' => __('The service was successfully updated')];
     }

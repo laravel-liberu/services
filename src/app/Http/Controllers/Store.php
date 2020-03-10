@@ -10,8 +10,7 @@ class Store extends Controller
 {
     public function __invoke(ValidateServiceRequest $request, Service $service)
     {
-        $service->inCents(false)
-            ->fill($request->validated())
+        $service->fill($request->validated())
             ->save();
 
         return [
