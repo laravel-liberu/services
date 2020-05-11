@@ -38,10 +38,8 @@
                     "name": "vat_percent",
                     "value": null,
                     "meta": {
-                        "type": "input",
-                        "content": "number",
-                        "min": 0,
-                        "step": 1
+                        "type": "select",
+                        "options": "LaravelEnso\\Financials\\App\\Enums\\VatRates"
                     }
                 },
                 {
@@ -62,7 +60,12 @@
                         "type": "input",
                         "content": "checkbox"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "columns": 1,
+            "fields": [
                 {
                     "label": "Description",
                     "name": "description",

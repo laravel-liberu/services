@@ -15,6 +15,7 @@
         "php": ">=7.4.0",
         "laravel-enso/core": "4.8.*",
         "laravel-enso/dynamic-methods": "1.1.*",
+        "laravel-enso/financials": "2.7.*",
         "laravel-enso/forms": "3.4.*",
         "laravel-enso/helpers": "1.15.*",
         "laravel-enso/measurement-units": "1.1.*",
