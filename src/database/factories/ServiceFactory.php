@@ -6,7 +6,7 @@ use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
 use LaravelEnso\Services\App\Models\Service;
 
 $factory->define(Service::class, fn (Faker $faker) => [
-    'measurement_unit_id' => fn () => factory(MeasurementUnit::class)->create()->id,
+    'measurement_unit_id' => fn () => MeasurementUnit::firstOrCreate(['name' => 'Piece'])->id,
     'name' => $faker->name,
     'code' => $faker->unique()->ean8,
     'list_price' => $faker->numberBetween(1, 300),

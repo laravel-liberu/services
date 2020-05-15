@@ -39,7 +39,7 @@
                     "value": null,
                     "meta": {
                         "type": "select",
-                        "options": "LaravelEnso\\Financials\\App\\Enums\\VatRates"
+                        "options": "LaravelEnso\\Helpers\\App\\Enums\\VatRates"
                     }
                 },
                 {
