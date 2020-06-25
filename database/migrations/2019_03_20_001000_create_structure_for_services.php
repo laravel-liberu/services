@@ -1,10 +1,10 @@
 <?php
 
-use LaravelEnso\Migrator\App\Database\Migration;
+use LaravelEnso\Migrator\Database\Migration;
 
 class CreateStructureForServices extends Migration
 {
-    protected $permissions = [
+    protected array $permissions = [
         ['name' => 'services.index', 'description' => 'Show index for service', 'is_default' => false],
         ['name' => 'services.create', 'description' => 'Create service', 'is_default' => false],
         ['name' => 'services.store', 'description' => 'Store a new service', 'is_default' => false],
@@ -17,7 +17,7 @@ class CreateStructureForServices extends Migration
         ['name' => 'services.options', 'description' => 'Get service options for select', 'is_default' => false],
     ];
 
-    protected $menu = [
+    protected array $menu = [
         'name' => 'Services', 'icon' => 'handshake', 'route' => 'services.index', 'order_index' => 230, 'has_children' => false,
     ];
 }

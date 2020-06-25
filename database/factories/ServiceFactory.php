@@ -2,8 +2,8 @@
 
 use Faker\Generator as Faker;
 use Illuminate\Support\Collection;
-use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
-use LaravelEnso\Services\App\Models\Service;
+use LaravelEnso\MeasurementUnits\Models\MeasurementUnit;
+use LaravelEnso\Services\Models\Service;
 
 $factory->define(Service::class, fn (Faker $faker) => [
     'measurement_unit_id' => fn () => MeasurementUnit::firstOrCreate(['name' => 'Piece'])->id,

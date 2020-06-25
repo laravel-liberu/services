@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\Services\App\Http\Controllers;
+namespace LaravelEnso\Services\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\Services\App\Http\Requests\ValidateServiceRequest;
-use LaravelEnso\Services\App\Models\Service;
+use LaravelEnso\Services\Http\Requests\ValidateServiceRequest;
+use LaravelEnso\Services\Models\Service;
 
 class Store extends Controller
 {

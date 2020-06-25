@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\Services\App\Tables\Builders;
+namespace LaravelEnso\Services\Tables\Builders;
 
 use Illuminate\Database\Eloquent\Builder;
-use LaravelEnso\Services\App\Models\Service;
-use LaravelEnso\Tables\App\Contracts\Table;
+use LaravelEnso\Services\Models\Service;
+use LaravelEnso\Tables\Contracts\Table;
 
 class ServiceTable implements Table
 {

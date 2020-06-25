@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\Services\App\Forms\Builders;
+namespace LaravelEnso\Services\Forms\Builders;
 
-use LaravelEnso\Forms\App\Services\Form;
-use LaravelEnso\Services\App\Models\Service;
+use LaravelEnso\Forms\Services\Form;
+use LaravelEnso\Services\Models\Service;
 
 class ServiceForm
 {

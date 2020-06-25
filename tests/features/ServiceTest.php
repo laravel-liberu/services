@@ -1,13 +1,13 @@
 <?php
 
 use Tests\TestCase;
-use LaravelEnso\Core\App\Models\User;
-use LaravelEnso\Services\App\Models\Service;
-use LaravelEnso\Forms\App\TestTraits\EditForm;
-use LaravelEnso\Forms\App\TestTraits\CreateForm;
-use LaravelEnso\Forms\App\TestTraits\DestroyForm;
+use LaravelEnso\Core\Models\User;
+use LaravelEnso\Services\Models\Service;
+use LaravelEnso\Forms\TestTraits\EditForm;
+use LaravelEnso\Forms\TestTraits\CreateForm;
+use LaravelEnso\Forms\TestTraits\DestroyForm;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use LaravelEnso\Tables\App\Traits\Tests\Datatable;
+use LaravelEnso\Tables\Traits\Tests\Datatable;
 
 class ServiceTest extends TestCase
 {
