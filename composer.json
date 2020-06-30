@@ -18,7 +18,7 @@
     "license": "MIT",
     "require": {
         "php": ">=7.4.0",
-        "laravel-enso/core": "4.8.*",
+        "laravel-enso/core": "^5.0",
         "laravel-enso/dynamic-methods": "^2.0",
         "laravel-enso/financials": "^3.0",
         "laravel-enso/forms": "^4.0",
