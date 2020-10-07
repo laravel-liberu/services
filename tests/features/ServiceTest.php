@@ -25,7 +25,7 @@ class ServiceTest extends TestCase
         $this->seed()
             ->actingAs(User::first());
 
-        $this->testModel = factory(Service::class)->make();
+        $this->testModel = Service::factory()->make();
     }
 
     /** @test */
