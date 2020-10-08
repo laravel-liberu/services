@@ -18,7 +18,7 @@
     "license": "MIT",
     "require": {
         "php": ">=7.4.0",
-        "laravel-enso/core": "^5.0",
+        "laravel-enso/core": "^6.0",
         "laravel-enso/dynamic-methods": "^2.0",
         "laravel-enso/financials": "^3.0",
         "laravel-enso/forms": "^4.0",
@@ -28,7 +28,8 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelEnso\\Services\\": "src/"
+            "LaravelEnso\\Services\\": "src/",
+            "LaravelEnso\\Services\\Database\\Factories\\": "database/factories/"
         }
     },
     "extra": {
