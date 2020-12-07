@@ -1,13 +1,13 @@
 <?php
 
-use Tests\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use LaravelEnso\Core\Models\User;
-use LaravelEnso\Services\Models\Service;
-use LaravelEnso\Forms\TestTraits\EditForm;
 use LaravelEnso\Forms\TestTraits\CreateForm;
 use LaravelEnso\Forms\TestTraits\DestroyForm;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use LaravelEnso\Forms\TestTraits\EditForm;
+use LaravelEnso\Services\Models\Service;
 use LaravelEnso\Tables\Traits\Tests\Datatable;
+use Tests\TestCase;
 
 class ServiceTest extends TestCase
 {
@@ -56,7 +56,7 @@ class ServiceTest extends TestCase
             route('services.update', $this->testModel->id, false),
             $this->testModel->toArray()
         )->assertStatus(200)
-        ->assertJsonStructure(['message']);
+            ->assertJsonStructure(['message']);
 
         $this->assertEquals(
             $this->testModel->name,
@@ -73,7 +73,7 @@ class ServiceTest extends TestCase
             'query' => $this->testModel->name,
             'limit' => 10,
         ], false))
-        ->assertStatus(200)
-        ->assertJsonFragment(['name' => $this->testModel->name]);
+            ->assertStatus(200)
+            ->assertJsonFragment(['name' => $this->testModel->name]);
     }
 }
