@@ -13,12 +13,8 @@ use LaravelEnso\Tables\Traits\TableCache;
 
 class Service extends Model
 {
-    use Abilities,
-        ActiveState,
-        AvoidsDeletionConflicts,
-        HasFactory,
-        TableCache,
-        Rememberable;
+    use Abilities, ActiveState, AvoidsDeletionConflicts, HasFactory;
+    use TableCache, Rememberable;
 
     protected $guarded = ['id'];
 
