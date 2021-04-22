@@ -17,7 +17,7 @@ class Decimals implements MigratesTable, Applicable
     {
         return Schema::hasColumn('services', 'list_price');
     }
-    
+
     public function migrateTable(): void
     {
         Schema::table('services', fn ($table) => $table
