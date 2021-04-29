@@ -20,7 +20,6 @@
         "php": ">=7.4.0",
         "laravel-enso/core": "^6.0",
         "laravel-enso/dynamic-methods": "^2.0",
-        "laravel-enso/financials": "^3.0",
         "laravel-enso/forms": "^4.0",
         "laravel-enso/helpers": "^2.0",
         "laravel-enso/measurement-units": "^2.0",
