@@ -11,7 +11,7 @@ class CreateServicesTable extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->integer('measurement_unit_id')->unsigned()->nullable();
+            $table->integer('measurement_unit_id')->unsigned();
             $table->foreign('measurement_unit_id')->references('id')
                 ->on('measurement_units');
 
