@@ -3,7 +3,6 @@
 namespace LaravelEnso\Services\Upgrades;
 
 use Illuminate\Support\Facades\Schema;
-use LaravelEnso\Upgrade\Contracts\Applicable;
 use LaravelEnso\Upgrade\Contracts\MigratesTable;
 use LaravelEnso\Upgrade\Helpers\Column;
 
