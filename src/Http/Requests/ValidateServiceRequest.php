@@ -28,6 +28,6 @@ class ValidateServiceRequest extends FormRequest
     private function uniqueCode()
     {
         return Rule::unique('services', 'code')
-            ->ignore($this->route('service')->id);
+            ->ignore($this->route('service')?->id);
     }
 }
