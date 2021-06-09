@@ -3,7 +3,7 @@
 namespace LaravelEnso\Services\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Collection;
+use LaravelEnso\Helpers\Enums\VatRates;
 use LaravelEnso\MeasurementUnits\Models\MeasurementUnit;
 use LaravelEnso\Services\Models\Service;
 
@@ -18,7 +18,7 @@ class ServiceFactory extends Factory
             'name' => $this->faker->name,
             'code' => $this->faker->unique()->ean8,
             'list_price' => $this->faker->numberBetween(1, 300),
-            'vat_percent' => (new Collection([5, 19, 24]))->random(),
+            'vat_percent' => VatRates::values()->random(),
             'description' => $this->faker->text,
             'is_active' => true,
         ];

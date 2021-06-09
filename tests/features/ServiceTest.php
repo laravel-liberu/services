@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use LaravelEnso\Core\Models\User;
 use LaravelEnso\Forms\TestTraits\CreateForm;
 use LaravelEnso\Forms\TestTraits\DestroyForm;
 use LaravelEnso\Forms\TestTraits\EditForm;
 use LaravelEnso\Services\Models\Service;
 use LaravelEnso\Tables\Traits\Tests\Datatable;
+use LaravelEnso\Users\Models\User;
 use Tests\TestCase;
 
 class ServiceTest extends TestCase
@@ -19,8 +19,6 @@ class ServiceTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-
-        // $this->withoutExceptionHandling();
 
         $this->seed()
             ->actingAs(User::first());

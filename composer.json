@@ -7,18 +7,19 @@
         "services",
         "service-management"
     ],
-    "authors": [{
-        "name": "Adrian Ocneanu",
-        "email": "aocneanu@gmail.com",
-        "homepage": "https://laravel-enso.com",
-        "role": "Developer"
-    }],
+    "authors": [
+        {
+            "name": "Adrian Ocneanu",
+            "email": "aocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        }
+    ],
     "homepage": "https://github.com/laravel-enso/services",
     "type": "library",
     "license": "MIT",
     "require": {
-        "php": ">=7.4.0",
-        "laravel-enso/core": "^6.0",
+        "laravel-enso/core": "^7.0",
         "laravel-enso/dynamic-methods": "^2.0",
         "laravel-enso/forms": "^4.0",
         "laravel-enso/helpers": "^2.0",
