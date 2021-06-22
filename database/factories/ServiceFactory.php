@@ -18,7 +18,7 @@ class ServiceFactory extends Factory
             'name' => $this->faker->name,
             'code' => $this->faker->unique()->ean8,
             'list_price' => $this->faker->numberBetween(1, 300),
-            'vat_percent' => VatRates::values()->random(),
+            'vat_percent' => VatRates::keys()->random(),
             'description' => $this->faker->text,
             'is_active' => true,
         ];

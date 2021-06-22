@@ -4,6 +4,7 @@ namespace LaravelEnso\Services\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
+use Illuminate\Validation\Rules\Unique;
 
 class ValidateServiceRequest extends FormRequest
 {
@@ -25,9 +26,9 @@ class ValidateServiceRequest extends FormRequest
         ];
     }
 
-    private function uniqueCode()
+    private function uniqueCode(): Unique
     {
         return Rule::unique('services', 'code')
-            ->ignore($this->route('service')?->id);
+            ->ignore($this->route('service'));
     }
 }
