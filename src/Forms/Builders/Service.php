@@ -3,9 +3,9 @@
 namespace LaravelEnso\Services\Forms\Builders;
 
 use LaravelEnso\Forms\Services\Form;
-use LaravelEnso\Services\Models\Service;
+use LaravelEnso\Services\Models\Service as Model;
 
-class ServiceForm
+class Service
 {
     private const TemplatePath = __DIR__.'/../Templates/service.json';
 
@@ -13,7 +13,7 @@ class ServiceForm
 
     public function __construct()
     {
-        $this->form = new Form(self::TemplatePath);
+        $this->form = new Form($this->templatePath());
     }
 
     public function create()
@@ -21,8 +21,13 @@ class ServiceForm
         return $this->form->create();
     }
 
-    public function edit(Service $service)
+    public function edit(Model $service)
     {
         return $this->form->edit($service);
+    }
+
+    protected function templatePath(): string
+    {
+        return self::TemplatePath;
     }
 }
