@@ -3,16 +3,16 @@
 namespace LaravelEnso\Services\Tables\Builders;
 
 use Illuminate\Database\Eloquent\Builder;
-use LaravelEnso\Services\Models\Service;
+use LaravelEnso\Services\Models\Service as Model;
 use LaravelEnso\Tables\Contracts\Table;
 
-class ServiceTable implements Table
+class Service implements Table
 {
-    protected const TemplatePath = __DIR__.'/../Templates/services.json';
+    private const TemplatePath = __DIR__.'/../Templates/services.json';
 
     public function query(): Builder
     {
-        return Service::selectRaw('
+        return Model::selectRaw('
             services.id, services.name, services.code, services.list_price, services.vat_percent,
             services.is_active, services.description,  measurement_units.name as measurementUnit
         ')->join('measurement_units', 'measurement_units.id', '=', 'services.measurement_unit_id');
