@@ -2,7 +2,7 @@
 
 use LaravelEnso\Migrator\Database\Migration;
 
-class CreateStructureForServices extends Migration
+return new class extends Migration
 {
     protected array $permissions = [
         ['name' => 'services.index', 'description' => 'Show index for service', 'is_default' => false],
@@ -20,4 +20,4 @@ class CreateStructureForServices extends Migration
     protected array $menu = [
         'name' => 'Services', 'icon' => 'handshake', 'route' => 'services.index', 'order_index' => 230, 'has_children' => false,
     ];
-}
+};
