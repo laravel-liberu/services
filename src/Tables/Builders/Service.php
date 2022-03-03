@@ -20,6 +20,6 @@ class Service implements Table
 
     public function templatePath(): string
     {
-        return static::TemplatePath;
+        return self::TemplatePath;
     }
 }
