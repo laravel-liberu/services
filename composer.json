@@ -1,8 +1,8 @@
 {
-    "name": "cgdsoftware/services",
+    "name": "laravel-liberu/services",
     "description": "Service manager for Laravel Enso",
     "keywords": [
-        "cgdsoftware",
+        "laravel-liberu",
         "laravel",
         "services",
         "service-management"
@@ -11,20 +11,20 @@
         {
             "name": "Adrian Ocneanu",
             "email": "aocneanu@gmail.com",
-            "homepage": "https://cgdsoftware.com",
+            "homepage": "https://laravel-liberu.com",
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/cgdsoftware/services",
+    "homepage": "https://github.com/laravel-liberu/services",
     "type": "library",
     "license": "MIT",
     "require": {
-        "cgdsoftware/core": "^8.0",
-        "cgdsoftware/dynamic-methods": "^2.0",
-        "cgdsoftware/forms": "^4.0",
-        "cgdsoftware/helpers": "^2.0",
-        "cgdsoftware/measurement-units": "^3.0",
-        "cgdsoftware/tables": "^4.0"
+        "laravel-liberu/core": "^8.0",
+        "laravel-liberu/dynamic-methods": "^2.0",
+        "laravel-liberu/forms": "^4.0",
+        "laravel-liberu/helpers": "^2.0",
+        "laravel-liberu/measurement-units": "^3.0",
+        "laravel-liberu/tables": "^4.0"
     },
     "autoload": {
         "psr-4": {

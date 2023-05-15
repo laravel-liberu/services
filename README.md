@@ -7,9 +7,9 @@
 [![Latest Stable Version](https://poser.pugx.org/laravel-enso/services/version)](https://packagist.org/packages/laravel-enso/services)
 
 
-Services package is an extesion of the Laravel Enso enviroment, designed for services management.
+Services package is an extesion of the Laravel Liberu enviroment, designed for services management.
 
-**Note:** *This package cannot be used outside of enso enviroment and is not included in [Laravel Enso Core](https://github.com/laravel-enso/Core) packages.*
+**Note:** *This package cannot be used outside of enso enviroment and is not included in [Laravel Liberu Core](https://github.com/laravel-enso/Core) packages.*
 
 ### Features
 * crud operations for services
