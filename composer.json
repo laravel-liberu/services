@@ -28,14 +28,14 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelEnso\\Services\\": "src/",
-            "LaravelEnso\\Services\\Database\\Factories\\": "database/factories/"
+            "LaravelLiberu\\Services\\": "src/",
+            "LaravelLiberu\\Services\\Database\\Factories\\": "database/factories/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelEnso\\Services\\AppServiceProvider"
+                "LaravelLiberu\\Services\\AppServiceProvider"
             ]
         }
     },

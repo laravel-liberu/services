@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\Services\Http\Controllers;
+namespace LaravelLiberu\Services\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\Services\Tables\Builders\Service;
-use LaravelEnso\Tables\Traits\Init;
+use LaravelLiberu\Services\Tables\Builders\Service;
+use LaravelLiberu\Tables\Traits\Init;
 
 class InitTable extends Controller
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\Services\Forms\Builders;
+namespace LaravelLiberu\Services\Forms\Builders;
 
-use LaravelEnso\Forms\Services\Form;
-use LaravelEnso\Services\Models\Service as Model;
+use LaravelLiberu\Forms\Services\Form;
+use LaravelLiberu\Services\Models\Service as Model;
 
 class Service
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace LaravelEnso\Services\Database\Factories;
+namespace LaravelLiberu\Services\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use LaravelEnso\Helpers\Enums\VatRates;
-use LaravelEnso\MeasurementUnits\Models\MeasurementUnit;
-use LaravelEnso\Services\Models\Service;
+use LaravelLiberu\Helpers\Enums\VatRates;
+use LaravelLiberu\MeasurementUnits\Models\MeasurementUnit;
+use LaravelLiberu\Services\Models\Service;
 
 class ServiceFactory extends Factory
 {
