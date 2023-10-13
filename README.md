@@ -1,15 +1,15 @@
 # Services
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/81ba4c3ed0ca4323baae66bb84a2751d)](https://www.codacy.com/gh/laravel-enso/services?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=laravel-enso/services&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/81ba4c3ed0ca4323baae66bb84a2751d)](https://www.codacy.com/gh/laravel-liberu/services?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=laravel-liberu/services&amp;utm_campaign=Badge_Grade)
 [![StyleCI](https://github.styleci.io/repos/85492361/shield?branch=master)](https://github.styleci.io/repos/85492361)
-[![License](https://poser.pugx.org/laravel-enso/services/license)](https://packagist.org/packages/laravel-enso/datatable)
-[![Total Downloads](https://poser.pugx.org/laravel-enso/services/downloads)](https://packagist.org/packages/laravel-enso/services)
-[![Latest Stable Version](https://poser.pugx.org/laravel-enso/services/version)](https://packagist.org/packages/laravel-enso/services)
+[![License](https://poser.pugx.org/laravel-liberu/services/license)](https://packagist.org/packages/laravel-liberu/datatable)
+[![Total Downloads](https://poser.pugx.org/laravel-liberu/services/downloads)](https://packagist.org/packages/laravel-liberu/services)
+[![Latest Stable Version](https://poser.pugx.org/laravel-liberu/services/version)](https://packagist.org/packages/laravel-liberu/services)
 
 
 Services package is an extesion of the Laravel Liberu enviroment, designed for services management.
 
-**Note:** *This package cannot be used outside of enso enviroment and is not included in [Laravel Liberu Core](https://github.com/laravel-enso/Core) packages.*
+**Note:** *This package cannot be used outside of liberu enviroment and is not included in [Laravel Liberu Core](https://github.com/laravel-liberu/Core) packages.*
 
 ### Features
 * crud operations for services
@@ -18,7 +18,7 @@ Services package is an extesion of the Laravel Liberu enviroment, designed for s
 * tests
 
 ### Instalation
-* install the package using composer: `composer require laravel-enso/services`
+* install the package using composer: `composer require laravel-liberu/services`
 * adds the following alias in `webackpack.mix.js`
 ```
 .webpackConfig({
@@ -26,7 +26,7 @@ Services package is an extesion of the Laravel Liberu enviroment, designed for s
             extensions: ['.js', '.vue', '.json'],
             alias: {
                  //other aliases
-                '@services': `${__dirname}/vendor/laravel-enso/services/src/resources/js`,
+                '@services': `${__dirname}/vendor/laravel-liberu/services/src/resources/js`,
             },
         },
     })
